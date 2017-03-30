@@ -48,7 +48,7 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> I installed Python 3 because it came easily with Anaconda and was recommended by the program.  However, if I were to reason through it, I would probably install 3 anyways. Python 3 has more features and will probably become the standard in the future (though it may not be now), so I prefer to learn with it as opposed to Python 2. It's wiki also says that the language has been made more consistent so it’s a bit easier to learn than 2. It seems that writing good, clean code can also help someone avoid 2 vs. 3 backwards compatibility issues. And if they do arise and I need to program in 2, I imagine the differences between the two languages will be fairly  easy to learn/navigate.
+>> I installed Python 3 because it was recommended by the bootcamp.  However, if I were to reason through it, I would most likely install 3 anyways. Python 3 has more features and is on track to become the standard language used in the future because Python 2 is not going to be maintained after 2020. Python 3 documentation also says that the language has been made more consistent so it’s a bit easier to learn. It also seems that writing good, clean code can help someone avoid 2 vs. 3 backwards compatibility issues. If at any point I do need to program in Python 2, the differences between the two languages shouldn't be too hard to navigate.
 
 ###Q2. Which Python Version Installed   
 
