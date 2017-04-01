@@ -81,14 +81,13 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> I've decided to use Emacs, while making occaisional use of Vim in order to gain some familiarity with it. Look below for my reasoning. In addition, I've decided to use emacs for my graphical editor as well, so I've opted out of nano in an effort to only use one editor for everything.
 --
 
 ### Q3. Graphical Editor
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I've decided to primarily use Emacs for the Data Science Bootcamp, while on occasion opting to use Vim for quick text edits in order to get familiar with basic Vim control. I'm drawn to Emacs because the idea of navigating my computer and doing programming work all from one editor is appealing, and Emacs seem to have a lot more customizable features in this regard than Vim. I will say as a beginner student in Data Science I am a bit hesitant to go this route because it seems more difficult to learn, and emacs isn't available on all machines (unlike Vim). However, I'm committed to try emacs as my primary editor. An extra perk of emacs is that, off the bat, the use of the ctrl key feels more intuitive to me than the : key. On the other hand, it does seem like knowing Vim is a must (in case you end up working on a machine that doesn't have emacs or doesn't have emacs configured the same way as your personal machine), so I'm going to try to use vims for any quick edits I may need to do that don't require extensive coding. I decided against the modern IDEs for a variety of reasons. For one, IDE's are inherently designed to be easy to use so I don't feel like I need to invest too much time learning their quirks. If I need to use one in the future, I can invest the time then. I've also used Atom and Sublime in the past, and I'm looking to learn something new. Another reason I'd like to learn to navigate emacs is for increased productivity. Doing everything I need to do from one space seems like an enormous time saver. In emacs (and vim), you can customize to only see as many features and information as you want to (some say IDE's show too much information and thereby slow productivity).
 
  
