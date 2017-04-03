@@ -34,7 +34,18 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > pwd :show current working directory path
+mkdir :creating a directory
+rmdir :deleting a directory
+touch :creating a file
+rm :deleting a file
+mv :renaming a file
+ls -a :listing hidden files
+cp *file path* *new file path* :copying a file from one directory to another
+$|$ :left output --> right command
+$<$ :right output --> left command
+$>$: left output --> writes to right file
+$>>$: left output -->> appends to right file
 
 ---
 
@@ -42,7 +53,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls -d
+ls -l
+ls -t
+ls -R
+ls -r
 
 ---
 
@@ -50,7 +65,12 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs can build and execute command lines from standard input. Commands can take different types of inputs: arguments or standard input, or both. Arguments are a list of strings provided to the commands, whereas standard input is a stream of bytes (like text) that the command can read. 
+
+Example: A command like rm only takes strings (the names of files) as input. A command like echo converts arguments into standard output text bytes. xargs can be used to pipe input from the echo command to the rm command. It iterates through the standard input line by line and executes rm. 
+
+"echo file1.txt | rm" would produce an error
+"echo file1.txt | xargs rm" would run like "rm file1.txt"
 
  
 
