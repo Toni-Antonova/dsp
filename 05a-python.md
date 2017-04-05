@@ -20,12 +20,8 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> A set behaves like a collection of dictionary keys with no values. This means that an element can only appear in a set once, much like a key in a dictionary. This is not the case for lists. Because of this characteristic, the use of sets over lists can often simplify code and reduce run-time. 
-
-On the other hand, lists provide users more control. A list is an ordered sequence of elements whereas a set is a distinct list of elements that is unordered. Lists therefore allow the user precise control over where in the list each element is inserted using integer indexes. Programmers don't have this kind of positional access when dealing with sets.
-
-Here is an example of a function written two ways. Lists are used in the first code, whereas sets are used in the second. The fuction takes a list as an argument, returns True if any object appears in the list more than once, and returns False otherwise.
- 
+>> A set behaves like a collection of dictionary keys with no values. This means that an element can only appear in a set once, much like a key in a dictionary. This is not the case for lists. Because of this characteristic, the use of sets over lists can often simplify code and reduce run-time.   On the other hand, lists provide users more control. A list is an ordered sequence of elements whereas a set is a distinct list of elements that is unordered. Lists therefore allow the user precise control over where in the list each element is inserted using integer indexes. Programmers don't have this kind of positional access when dealing with sets.  Here is an example of a function written two ways. Lists are used in the first code, whereas sets are used in the second. The fuction takes a list as an argument, returns True if any object appears in the list more than once, and returns False otherwise.
+python
 def has_duplicates(t):
     d = {}
     for x in t:
