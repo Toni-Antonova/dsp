@@ -97,15 +97,23 @@ def only_upper(t):
 ```
 >>Example of Set Comprehension:  
   
->>Not Using Set Comprehension ---> s = set([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ])  
+>>Not Using Set Comprehension
+```python 
+s = set([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ])  
+```
+    
+>>Using Set Comprehension
+```python 
+s = {x for x in range(10)}. 
+```  
+>>Example of Dictionary Comprehension  
   
->>Using Set Comprehension ----> s = {x for x in range(10)}. 
-  
->>Example of Dictionary Comprehension  
-  
->>Not using Dict Comprehension ---> d = dict([(i, chr(65+i)) for i in range(4)]). 
-  
->> Using Dict Comprehension --> d = {i : chr(65+i) for i in range(4)}
+>>Not using Dict Comprehension
+```python d = dict([(i, chr(65+i)) for i in range(4)]). 
+  ``` 
+>> Using Dict Comprehension 
+```python d = {i : chr(65+i) for i in range(4)}
+```
 
 
 ---
