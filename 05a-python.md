@@ -43,7 +43,11 @@ def has_duplicates(t):
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> The lambda function is a way to create anonymous functions, aka function definitions without a name/ identifier. These function are typically only needed where they have been created and nowhere else. They are often used as arguments being passed to higher-order function or for constructing the result of a higher-order function that returns a function type. 
+
+This function sorts a list of numbers by the sum of their last two digits: 
+
+sorted (numbers, key = lambda x: (sum  ([int(y) for y in str (x%100)])))
 
 ---
 
@@ -51,7 +55,46 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions can be used to write mapping and filtering functions that are more concise than functions that use other loops to iterate through lists. List comprehensions also usually run faster. On the downside, they are often harder to debug because you can't put a print statement inside their loop.
+
+The textbook gave examples that showed how list comprehensions can shorten both mapping and filter functions. 
+
+Mapping Function without List Comprehensions 
+
+def capitalize_all(t):
+    res = []
+    for s in t:
+        res.append(s.capitalize())
+return res
+
+Mapping Function with List Comprehensions 
+def capitalize_all(t):
+    return [s.capitalize() for s in t]
+    
+Filtering Function without List Comprehensions    
+def only_upper(t):
+    res = []
+    for s in t:
+        if s.isupper():
+            res.append(s)
+    return res
+
+Filtering Function with List Comprehension
+def only_upper(t):
+    return [s for s in t if s.isupper()]
+
+Example of Set Comprehension:
+
+Not Using Set Comprehension ---> s = set([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ])
+
+Using Set Comprehension ----> s = {x for x in range(10)}
+
+Example of Dictionary Comprehension
+
+Not using Dict Comprehension ---> d = dict([(i, chr(65+i)) for i in range(4)])
+
+Using Dict Comprehension --> d = {i : chr(65+i) for i in range(4)}
+
 
 ---
 
