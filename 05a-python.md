@@ -111,15 +111,14 @@ s = {x for x in range(10)}.
 >>Not using Dict Comprehension. 
   
 ```python 
-d = dict([(i, chr(65+i)) for i in range(4)]). 
-  ```   
-    
+d = dict([(i, chr(65+i)) for i in range(4)]).
+```  
+    
 >> Using Dict Comprehension   
-  
-```python 
+    
+```python
 d = {i : chr(65+i) for i in range(4)}
-```
-
+```  
 
 ---
 
