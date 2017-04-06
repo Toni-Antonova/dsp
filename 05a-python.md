@@ -108,10 +108,10 @@ s = {x for x in range(10)}.
 ```  
 >>Example of Dictionary Comprehension  
   
->>Not using Dict Comprehension. 
+>>Not using Dict Comprehension 
   
 ```python 
-d = dict([(i, chr(65+i)) for i in range(4)]).
+d = dict([(i, chr(65+i)) for i in range(4)])
 ```  
     
 >> Using Dict Comprehension   
