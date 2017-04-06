@@ -1,37 +1,50 @@
-# Hint:  use Google to find python function
-
-####a) 
-date_start = '01-02-2013'  
-date_stop = '07-28-2015'   
-
-####b)  
-date_start = '12312013'  
-date_stop = '05282015'  
-
-####c)  
-date_start = '15-Jan-1994'  
+date_start = '15-Jan-1994'      
 date_stop = '14-Jul-2015'  
-
-
-
-
-date_start = '01-02-2013'    
-date_stop = '07-28-2015'
-
 
 from datetime import date
 from datetime import datetime
+
+def convert_month(month):
+
+    return{
+        'Jan' : 1,
+        'Feb' : 2,
+        'Mar' : 3,
+        'Apr' : 4,
+        'May' : 5,
+        'Jun' : 6,
+        'Jul' : 7,
+        'Aug' : 8,
+        'Sep' : 9, 
+        'Oct' : 10,
+        'Nov' : 11,
+        'Dec' : 12
+    }[month]
+
+def convert_date(date):
+    
+    if len(date) < 10:
+        year = int(date[4:])
+        day = int(date[2:4])
+        month = int(date[0:2])
+    elif len(date) > 10:
+        year = int(date[7:])
+        day = int(date[0:2])
+        month = convert_month(date[3:6])
+    else:
+        year = int(date[6:])
+        day = int(date[3:5])
+        month = int(date[0:2])
+    
+    return (year, month, day)
+
 def days_between(start, stop):
 
-    startYear = int(start[6:])
-    endYear = int(stop[6:])
-    startDay = int(start[3:5])
-    endDay = int(stop[3:5])
-    startMonth = int(start[0:2])
-    endMonth = int(stop[0:2])
+    startDate = convert_date (start)
+    endDate = convert_date(stop)
     
-    begin = date(startYear, startMonth, startDay)
-    end = date(endYear, endMonth, endDay)
+    begin = date(*startDate)
+    end = date(*endDate)
     print (abs((end-begin).days))
     return (abs(end-begin).days)
 
@@ -45,8 +58,6 @@ def days_left_in_year (month, day):
         days += (12- startMonth)/2*61 +1
         if (startMonth == 2):
            days -= 2
-        elif (startMonth > 7): 
-           days -= 1
         else: 
            pass
     else:
@@ -59,13 +70,21 @@ def days_left_in_year (month, day):
         
     return days
 
+
 def days_in_between(start, stop):
-    startYear = int(start[6:])
-    endYear = int(stop[6:])
-    startDay = int(start[3:5])
-    endDay = int(stop[3:5])
-    startMonth = int(start[0:2])
-    endMonth = int(stop[0:2])
+#does not take into account leap years
+
+    startDate = convert_date (start)
+    endDate = convert_date(stop)
+    
+    startYear = startDate[0]
+    endYear = endDate[0]
+    
+    startMonth = startDate[1]
+    endMonth = endDate[1]
+    
+    startDay = startDate[2]
+    endDay = endDate[2]
     
     days = 0
 
