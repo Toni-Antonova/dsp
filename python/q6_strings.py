@@ -62,7 +62,13 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    f = s[0]
+    for i in range(len(s)):
+        if s[i] == f and i != 0:
+            s = s[0:i] + '*' + s[i+1:]
+        else:
+            pass
+    return s
 
 
 def mix_up(a, b):
@@ -80,7 +86,7 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    return (b[0:2] + a[2:] + ' ' + a[0:2] + b[2:])
 
 
 def verbing(s):
@@ -97,7 +103,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if (len(s)<3):
+        return s
+    else:
+        if s[-3:]=='ing':
+            return s + 'ly'
+        else:
+            return s +'ing'
 
 
 def not_bad(s):
@@ -117,9 +129,14 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    n = s.find('not')
+    b = s.find('bad')
+    if n < b and n != -1:
+        return s[0:n] + 'good' + s[b+3:]
+    else:
+        return s
 
-
+import math
 def front_back(a, b):
     """
     Consider dividing a string into two halves. If the length is even,
@@ -136,4 +153,8 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    pt_div_a = math.ceil(float(len(a))/2)
+    pt_div_b = math.ceil(float(len(b))/2)
+    return (a[0:pt_div_a] + b[0:pt_div_b] + a[pt_div_a:] + b[pt_div_b:])
+
+
