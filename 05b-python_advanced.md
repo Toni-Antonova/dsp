@@ -23,9 +23,9 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 >>md : 1  
 >>ma : 1  
 >>scd : 6  
->>bsed : 1 
->>phd : 31 
->>mph : 2  
+>>bsed : 1   
+>>phd : 31   
+>>mph : 2    
 >>ms : 2  
 >>jd : 1  
 
