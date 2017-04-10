@@ -84,14 +84,30 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Thought Process:  
+  
+Probability of being born a twin in the population =   
+    Probability of being born a fraternal twin in pop + Probability of being born an identical twin in pop  
+    
+Probability of brother being a twin = 100% because it already happened.  
+  
+Therefore probability of brother being an identical twin =   
+    [(Probability of being born an identical twin in pop)/(Probability of being born a twin in pop)] * 100  
 
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Maybe you could say that a frequentist attempts to find "absolute" probabilities", compared to a Bayesianist who attempts to find "relative" probabilities.   
+
+The frequentist looks to figure out the frequency of an event's occurence. The frequentist finds this probability of an event occuring measurable and observable based on different rules (pre-set parameters) about the event. He finds this probability exists independently of the person calculating it.   
+
+The Bayesian statistician, on the other hand, believes that data can only be observed from a realized sample. According the the Bayensianist, the rules governning an event (those 'pre-set' parameters) are actually unknown and only described probabalistically.  
+
+So, the frequentist sees underlying parameters that govern an event as remaining constant. The process is repeatable to infinite and the parameters are fixed. The probability of an event occuring is calculated based off of these fixed parameters and nothing else. The Bayesian, on the other hand, admits the underlying parameters governing an event are unknown and believes that only the obserable dataset is fixed. The Bayesian calculates the probability of an event occuring based off of this data. Because the individual calculating the probability may have an impact on the observable data collected, that individual may also have an impact on the statistic found.  
+
+
 
 ---
 
