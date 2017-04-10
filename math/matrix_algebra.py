@@ -34,14 +34,19 @@ U-V
 
 6*V
 
+U*V'
+
 U*V
 
+A+C'
 
 A+C
 
 A-C'
 
 C'-3*D
+
+B*A
 
 B*A
 
