@@ -92,7 +92,11 @@ Probability of being born a twin in the population =
 Probability of brother being a twin = 100% because it already happened.  
   
 Therefore probability of brother being an identical twin =   
-    [(Probability of being born an identical twin in pop)/(Probability of being born a twin in pop)] * 100  
+    [(Probability of being born an identical twin in pop)/(Probability of being born a twin in pop)] * 100    
+    
+x = ((1/300)/(1/300+1/125))*100  
+      
+  The probability of Elvis' brother was an identical twin is approximately 29.41%.  
 
 ---
 
