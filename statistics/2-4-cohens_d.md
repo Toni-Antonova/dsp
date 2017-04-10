@@ -1,5 +1,7 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
+**Full Jupyter File of Ex. can be found in statistics folder: Think%2BStats-2.ipynb**  
+
 **Exercise 2-4**
 
 
